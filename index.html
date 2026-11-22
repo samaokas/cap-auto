@@ -81,8 +81,8 @@
     }
 
     .logo-wrap {
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       margin: 0 auto 16px;
       background: var(--white);
       border-radius: 50%;
@@ -92,11 +92,14 @@
       box-shadow: 0 8px 25px rgba(0,0,0,0.25);
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
-    .logo-svg {
-      width: 90px;
-      height: 90px;
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 6px;
     }
 
     .brand-name {
@@ -332,31 +335,7 @@
     <!-- Header -->
     <div class="header">
       <div class="logo-wrap">
-        <!-- Logo SVG CAP AUTO -->
-        <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <!-- Outer gear -->
-          <circle cx="100" cy="100" r="78" fill="none" stroke="#c41e3a" stroke-width="16"/>
-          <!-- Gear teeth -->
-          <g fill="#c41e3a">
-            <rect x="92" y="8" width="16" height="28" rx="3"/>
-            <rect x="92" y="164" width="16" height="28" rx="3"/>
-            <rect x="8" y="92" width="28" height="16" rx="3"/>
-            <rect x="164" y="92" width="28" height="16" rx="3"/>
-            <rect x="30" y="30" width="16" height="28" rx="3" transform="rotate(-45 38 44)"/>
-            <rect x="154" y="30" width="16" height="28" rx="3" transform="rotate(45 162 44)"/>
-            <rect x="30" y="142" width="16" height="28" rx="3" transform="rotate(45 38 156)"/>
-            <rect x="154" y="142" width="16" height="28" rx="3" transform="rotate(-45 162 156)"/>
-          </g>
-          <!-- Inner black circle -->
-          <circle cx="100" cy="100" r="52" fill="#1a1a1a"/>
-          <!-- Car silhouette -->
-          <path d="M55 105 Q70 85 100 85 Q130 85 145 105 L145 115 Q145 122 138 122 L62 122 Q55 122 55 115 Z" fill="#c41e3a"/>
-          <circle cx="72" cy="115" r="8" fill="#1a1a1a"/>
-          <circle cx="128" cy="115" r="8" fill="#1a1a1a"/>
-          <!-- Text CAP AUTO -->
-          <text x="100" y="148" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#c41e3a">CAP</text>
-          <text x="100" y="168" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a">AUTO</text>
-        </svg>
+        <img src="logo.png" alt="CAP AUTO" />
       </div>
       <div class="brand-name">Atelier de maintenance</div>
       <div class="brand-tagline">CAP AUTO • Béjaïa</div>
